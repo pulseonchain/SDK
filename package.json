@@ -1,0 +1,53 @@
+{
+  "name": "@pulseonchain/sdk",
+  "version": "0.1.0",
+  "description": "Official SDK for the Pulse bonding curve protocol on Solana",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react-hooks": {
+      "import": "./dist/react-hooks.mjs",
+      "require": "./dist/react-hooks.js",
+      "types": "./dist/react-hooks.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "solana",
+    "bonding-curve",
+    "pulse",
+    "defi",
+    "sdk"
+  ],
+  "author": "Pulse Protocol",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/pulseonchain/sdk"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": ">=0.29.0",
+    "@solana/web3.js": "^1.91.0"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": ">=1.91.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
