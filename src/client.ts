@@ -1225,11 +1225,11 @@ export class Pulse {
       return {
         authority: new PublicKey(data.slice(8, 40)),
         platformWallet: new PublicKey(data.slice(40, 72)),
-        feeBasisPoints: data.readBigUInt64LE(72),
-        platformShareBps: data.readBigUInt64LE(80),
-        creatorShareBps: data.readBigUInt64LE(88),
-        graduationSolThreshold: data.readBigUInt64LE(96),
-        minCreatorReserve: data.readBigUInt64LE(104),
+        feeBasisPoints: Number(data.readBigUInt64LE(72)),
+        platformShareBps: Number(data.readBigUInt64LE(80)),
+        creatorShareBps: Number(data.readBigUInt64LE(88)),
+        graduationSolThreshold: Number(data.readBigUInt64LE(96)),
+        minCreatorReserve: Number(data.readBigUInt64LE(104)),
         paused: data[112] === 1,
         bump: data[113],
       };

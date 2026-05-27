@@ -36,15 +36,16 @@
  *
  * ## Provider Features
  *
- * | Feature                        | Standard RPC | Helius    | Alchemy   |
- * |--------------------------------|--------------|-----------|-----------|
- * | Buy / Sell / Trade             | ✅           | ✅        | ✅        |
- * | Fetch pool state               | ✅           | ✅        | ✅        |
- * | Simulate quotes                | ✅           | ✅        | ✅        |
- * | Token metadata (name, image)   | ❌           | ✅ DAS    | ✅        |
- * | Wallet token portfolio         | ❌           | ✅        | ✅        |
- * | Transfer history               | ❌           | ❌        | ✅        |
- * | Portfolio analytics (combined) | ❌           | ❌        | ❌        |
+ * | Feature                        | Standard RPC | Helius    | Alchemy   | Both (Combined) |
+ * |--------------------------------|--------------|-----------|-----------|-----------------|
+ * | Buy / Sell / Trade             | ✅           | ✅        | ✅        | ✅              |
+ * | Fetch pool state               | ✅           | ✅        | ✅        | ✅              |
+ * | Simulate quotes                | ✅           | ✅        | ✅        | ✅              |
+ * | Token metadata (name, image)   | ❌           | ✅ DAS    | ✅        | ✅              |
+ * | Wallet token portfolio         | ❌           | ✅        | ✅        | ✅              |
+ * | Transfer history               | ❌           | ❌        | ✅        | ✅              |
+ * | Token search                   | ❌           | ✅ DAS    | ❌        | ✅              |
+ * | Portfolio analytics (combined) | ❌           | ❌        | ❌        | ✅              |
  *
  * Use `Pulse.mainnet({ alchemyApiKey: "...", heliusApiKey: "..." })` for the full feature set.
  */
