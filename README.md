@@ -358,21 +358,6 @@ and code examples. Any AI agent that reads the skill can operate on Pulse.
 
 ---
 
-## RPC & Provider Feature Matrix
-
-| Feature | Standard RPC | Helius | Alchemy | Both (Combined) |
-||:---|:---:|:---:|:---:|:---:|
-| Buy / sell / trade | ✅ | ✅ | ✅ | ✅ |
-| Fetch pool state & quotes | ✅ | ✅ | ✅ | ✅ |
-| Simulate trades off-chain | ✅ | ✅ | ✅ | ✅ |
-| PDA derivation | ✅ | ✅ | ✅ | ✅ |
-| Graduation tracking | ✅ | ✅ | ✅ | ✅ |
-| Staker reward calculation | ✅ | ✅ | ✅ | ✅ |
-| **Token metadata (name, image)** | ❌ | ✅ DAS API | ✅ | ✅ |
-| **Wallet token portfolio** | ❌ | ✅ | ✅ | ✅ |
-| **Transfer history** | ❌ | ❌ | ✅ | ✅ |
-| **Token search** | ❌ | ✅ DAS API | ❌ | ✅ |
-| **Combined portfolio analytics** | ❌ | ❌ | ❌ | ✅ |
 
 > 💡 **Standard RPC** is free and works everywhere. Get a free Helius key at
 > [helius.dev](https://helius.dev) and an Alchemy key at
