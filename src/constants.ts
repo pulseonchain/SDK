@@ -61,6 +61,11 @@ export const SEED_MIGRATION_VAULT = Buffer.from("migration_vault");
 export const SEED_MIGRATION_CONFIG = Buffer.from("migration_config");
 export const SEED_STAKER_VAULT = Buffer.from("staker_vault");
 export const SEED_STAKE_TOKEN_VAULT = Buffer.from("stake_token_vault");
+export const SEED_POOL_STATS = Buffer.from("pool_stats");
+export const SEED_WHITELIST_CONFIG = Buffer.from("whitelist_config");
+export const SEED_WHITELIST_RECORD = Buffer.from("wl_record");
+export const SEED_REFERRAL_CONFIG = Buffer.from("referral_config");
+export const SEED_REFERRAL_RECORD = Buffer.from("referral_record");
 
 // ─── External Programs ────────────────────────────────────────────────────────
 

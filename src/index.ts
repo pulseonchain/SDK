@@ -55,3 +55,24 @@ export { PulsePDA } from "./pda";
 export * as constants from "./constants";
 export * from "./types";
 export * from "./utils";
+
+// ─── New Modules ──────────────────────────────────────────────────────────────
+
+// Pure bonding-curve math — mirrors math.rs exactly, usable off-chain
+export { BondingMath, INITIAL_VIRTUAL_SOL, INITIAL_VIRTUAL_TOKEN, BONDING_SUPPLY,
+         RESERVE_SUPPLY, LP_RESERVE_SUPPLY, GRADUATION_THRESHOLD, TOTAL_FEE_BPS,
+         TOKEN_DECIMALS } from "./math";
+export type { BuySimResult, SellSimResult } from "./math";
+
+// Migration helpers — DEX pool derivation, readiness diagnosis, auto-migrate watcher
+export { MigrationHelper, resolveMigrationAddresses,
+         deriveRaydiumCpmmPool, derivePumpSwapPool, deriveMeteoraDammPool } from "./migration";
+export type { MigrationReadiness, MigrationDiagnosis, MigrationWatchOptions } from "./migration";
+
+// Pool analytics — parses on-chain PoolStats PDA
+export { PoolStatsClient } from "./pool-stats";
+export type { RawPoolStats, EnrichedPoolStats } from "./pool-stats";
+
+// Whitelist / presale — Merkle tree build + proof generation + verification
+export { WhitelistHelper } from "./whitelist";
+export type { MerkleTree, MerkleProof } from "./whitelist";
